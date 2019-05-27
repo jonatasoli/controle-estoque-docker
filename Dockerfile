@@ -1,4 +1,3 @@
-
 FROM python:3.7-alpine
 MAINTAINER Jonatas Oliveira
 
@@ -8,10 +7,10 @@ COPY ./requirements.txt /requirements.txt
 
 RUN pip install -r requirements.txt
 
-RUN mkdir /app
-WORKDIR /app
-COPY ./app /app
+RUN mkdir /src
+WORKDIR /src
+COPY ./src /src
 
-RUN adduser -D user
+RUN adduser -D usuario
 
-USER user
+USER usuario
