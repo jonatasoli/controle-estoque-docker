@@ -6,7 +6,6 @@ from core.forms import InsereItemForm
 
 
 class HomeTemplateView(TemplateView):
-    import ipdb; ipdb.set_trace()
 
     template_name = 'index.html'
 
