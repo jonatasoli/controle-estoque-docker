@@ -12,8 +12,10 @@ services:
         - DB_NAME=app
         - DB_USER=postgres
         - DB_PASS=senhadanasa
+        - REQUIREMENTS_ARG=requirements-dev.txt
     ports:
       - 8000:8000
+    tty: true
     volumes:
       - ./src:/src
     command: >
