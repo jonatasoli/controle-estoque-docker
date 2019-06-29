@@ -1,2 +1,2 @@
 -r requirements.txt
-ipdb
+ipdb==0.12
